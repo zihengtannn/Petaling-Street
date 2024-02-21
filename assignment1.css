@@ -1,0 +1,681 @@
+body {
+    margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/*Background of page 1 2 3 4 5*/
+.background .background1 .background2 .background3 .background4{
+position: relative;
+}
+
+/*Background of page 1*/
+.background::before{
+  content: ' ';
+ display: block;
+ position: absolute;
+ width: 1600px;
+ height: 615px;
+ opacity: 0.05;
+ background-image: url("bg.jpg");
+ background-repeat: repeat;
+ background-position: center center;
+}
+
+/*Background of page 2*/
+.background1::before{
+  content: ' ';
+ display: block;
+ position: absolute;
+ width: 1600px;
+ height: 2400px;
+ opacity: 0.05;
+ background-image: url("bg.jpg");
+ background-repeat: repeat;
+ background-position: center center;
+}
+
+/*Background of page 3*/
+.background2::before{
+  content: ' ';
+ display: block;
+ position: absolute;
+ width: 1600px;
+ height: 1450px;
+ opacity: 0.05;
+ background-image: url("bg.jpg");
+ background-repeat: repeat;
+ background-position: center center;
+}
+
+/*Background of page 4*/
+.background3::before{
+  content: ' ';
+ display: block;
+ position: absolute;
+ width: 1600px;
+ height: 2075px;
+ opacity: 0.05;
+ background-image: url("bg.jpg");
+ background-repeat: repeat;
+ background-position: center center;
+}
+
+/*Background of page 5*/
+.background4::before{
+  content: ' ';
+ display: block;
+ position: absolute;
+ width: 1600px;
+ height: 2780px;
+ opacity: 0.05;
+ background-image: url("bg.jpg");
+ background-repeat: repeat;
+ background-position: center center;
+}
+
+/*3d panorama*/
+#panorama {
+    width: 780px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*navigation bar*/
+#border{
+  background-color: #f5ecd5;
+  position: fixed;
+  top: 0;
+  width: 1600px;
+  height: 160px;
+  transition: top 0.3s;
+  display: flex;
+  opacity: 0.9;
+}
+
+/*Logo*/
+.logo{
+  position:relative;
+  height:80px;
+  top:-35px;
+  left: 70px;
+}
+
+/*Title: Welcome to Petaling Street*/
+#title{
+ text-align: center;
+ font-family: "Times New Roman", Times, serif;
+ color:black;
+ font-size: 35px;
+ height:300px;
+ top: 270px;
+ left: 435px;
+ position: absolute;
+}
+
+/*Video background page 1*/
+#videos video{
+  width:1600px;
+  opacity: 0.3;
+  position: relative;
+  pointer-events: none;
+}
+
+/*Video background page 5*/
+#videos2 video{
+  width:600px;
+  margin-left: auto;
+  margin-right: auto;
+  pointer-events: none;
+  radius:50px;
+}
+
+/*Navigation bar word*/
+#border a:visited {
+  color: black;
+}
+
+/* mouse over link */
+#border a:hover {
+  color: white;
+}
+
+#border a{
+  float: right;
+  right:30px;
+  color:black;
+  text-decoration: none;
+  height: 200px;
+  font-family: Arial Black ;
+}
+
+
+/*make the dot of list dissapear */
+ul {
+  list-style-type: none;
+}
+
+
+
+/* NAVBAR MENU word placement */
+.menu {
+  position: relative;
+ display: flex;
+ right: -90px;
+ font-size: 18px;
+}
+
+.menu li {
+ padding: 50px 45px;
+}
+
+/* slides shows of image */
+.mySlides {
+  display:none;
+  position: relative;
+}
+
+/*  word of operate hours*/
+#textOfOperateHours{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 20px;
+  font-family: Times New Roman;
+}
+
+/*  word of history */
+#history{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 20px;
+  font-family: Times New Roman;
+}
+
+/*placement of things to do  */
+#TTD{
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Times New Roman;
+  font-size: 20px;
+  height:500px;
+  position: relative;
+}
+
+#TTD a:hover {
+  color: green;
+}
+
+#TTD img:hover {
+  transform: scale(1.05);
+}
+
+
+#TTD a{
+  color:black;
+  text-decoration: none;
+  font-family: Arial Black ;
+  font-size: 15px
+}
+
+/*image for things to do */
+.linkImage {
+  height:300px;
+  width:675px;
+  border-radius: 20px;
+  position: ;
+}
+
+/* image 1 2 3 4 in slide show */
+.pic1{
+  position: absolute;
+  top: 20px;
+  left:0;
+}
+
+.pic2{
+  position: absolute;
+  top: 20px;
+  right:0;
+}
+
+.pic3{
+  position: absolute;
+  top: 400px;
+  left:0;
+}
+
+.pic4{
+  position: absolute;
+  top: 400px;
+  right:0;
+}
+
+/* left and right arrow*/
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/*explaation of image slideshow*/
+.explain{
+  position:absolute;
+  font-size:25px;
+  top: 30px;
+  color: black;
+  background-color: white;
+  padding: 15px;
+  border-radius:15px;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/*add a black background color with a little bit see-through when hover*/
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*container of slide show*/
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/*dot under slideshow image*/
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+/*outer of map*/
+#mapouter{
+  height:600;
+  width:1100;
+  text-align: center;
+  font-family: Times New Roman;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*map*/
+.gmap_canvas {
+  overflow:hidden;
+  height:600;
+  width:1100;
+}
+
+/* footer of first page*/
+#footer {
+  width: 1600px;
+  height: 350px;
+  background-color: black;
+  position: relative;
+  top: 750px;
+}
+
+#footer img:hover {
+transform: scale(1.05);
+}
+
+
+/*word on left in footer*/
+.leftWord{
+  position: absolute;
+  top:8px;
+  left: 220px;
+  font-family: Times New Roman;
+  color: white;
+  font-size: 15px;
+}
+
+/*word on right in footer*/
+.rightWord{
+  position: absolute;
+  top:8px;
+  right: 220px;
+  font-family: Times New Roman;
+  color: white;
+  font-size: 15px;
+}
+
+/*index 2 3 4 5*/
+/*main title on top*/
+.subPageTitle{
+  position: relative;
+  top: 0;
+}
+
+.subPageTitle img{
+  position: relative;
+  width: 1600px;
+  height:200px;
+  opacity: 0.4;
+  border-radius:10px;
+  color: 9E8E64;
+  object-fit:cover;
+}
+
+/*word on main title on top*/
+.titleText{
+  position: absolute;
+  top: 50px;
+  color:black;
+  font-size: 30px;
+}
+
+/*second word for title on top*/
+.openingTitle{
+text-align: center;
+  font-size: 30px;
+}
+
+/* menu to change index*/
+.menu2 {
+  position: relative;
+ display: flex;
+ font-size: 18px;
+ top:15px;
+ left: 18%;
+}
+
+.menu2 a{
+  text-decoration: none;
+   font-family: "Times New Roman", Times, serif;
+   color: black;
+}
+
+
+
+.menu2 a:hover{
+  color:green;
+}
+
+.menu2 a:active{
+  color:red;
+}
+
+/* introduction for food and places*/
+.introduction{
+  text-align: center;
+}
+
+.introduction img{
+  width:500px;
+  height:300px;
+  border-radius: 10px;
+}
+
+
+.introduction p{
+  line-height: 2.5; font-size:18px;
+}
+
+/* introduction for index2*/
+.wordOfIntro{
+  position:relative;
+  text-align: left;
+  left: 425px;
+  font-size:18px;
+}
+
+/* introduction for index4*/
+.wordOfIntro2{
+  position:relative;
+  text-align: left;
+  left: 400px;
+  font-size:18px;
+}
+
+/* navogation bar*/
+.topnav {
+  overflow: hidden;
+  background-color: #f5ecd5;
+  position: fixed;
+  top: 0;
+  width: 1600px;
+  height: 160px;
+  transition: top 0.3s;
+  display: flex;
+  opacity: 0.9;
+}
+
+.topnav a {
+  float: right;
+  top: 130px;
+  display: block;
+  color: black;
+  padding: 75px 36px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav .icon {
+  display: none;
+  right: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+@media screen and (min-width: 320px) and (max-width:1200px) {
+
+  .topnav.responsive {position: fixed;} /* change when width change*/
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    font-size: 10px;
+  }
+
+  #history{
+    font-size:15px;
+  }
+  #textOfOperateHours{
+    font-size: 15px;
+  }
+  .linkImage{
+    transform: scale(0.7);
+  }
+  .leftWord{
+    font-size: 15px;
+    left: 105px;
+  }
+  .rightWord{
+    font-size: 15px;
+    right: 55px;
+  }
+
+  .pic1{
+    position: absolute;
+    top: 20px;
+    left:-100px;
+  }
+
+  .pic2{
+    position: absolute;
+    top: 20px;
+    right:-200px;
+  }
+
+  .pic3{
+    position: absolute;
+    top: 400px;
+    left:-100px;
+  }
+
+  .pic4{
+    position: absolute;
+    top: 400px;
+    right:-200px;
+  }
+
+  .menu {
+   right: 30px;
+  }
+
+  .logo{
+    width:240px;
+    height:-21px;
+    top:-30px;
+    left:55px;
+  }
+  #TTD img:hover {
+    transform: scale(0.75);
+  }
+  .background::before{
+    height: 600px;
+    width: 1100px;
+  }
+  #title{
+   font-size: 25px;
+   left: 335px;
+  }
+  .mySlides{
+    width: 1100px;
+  }
+
+  .next {
+    right: -120px;
+  }
+
+  #mapouter{
+    width:1100px;
+  }
+
+  #panorama{
+    width:900px;
+    radius:20px;
+  }
+
+  #footer{
+    width:1100px;
+  }
+  .topnav{
+    width:1100px;
+  }
+
+  .openingTitle{
+    font-size: 8px;
+  }
+
+  .introduction p{
+    font-size: 7px;
+  }
+
+  .introduction figcaption{
+    font-size: 7px;
+  }
+
+  .introduction h3{
+    font-size: 12px;
+  }
+
+  .wordOfIntro{
+    position:relative;
+     text-align: left;
+     left: 125px;
+     font-size:18px;
+  }
+
+  .wordOfIntro2{
+    position:relative;
+    text-align: left;
+    left: 125px;
+    font-size:12px;
+  }
+
+
+  .subPageTitle img{
+    width: 1100px;
+  }
+
+  .menu2 {
+    position: relative;
+   display: flex;
+   font-size: 18px;
+   top:15px;
+   left: 8%;
+  }
+
+
+  .background1::before{
+    height: 2650px;
+    width: 1100px;
+  }
+
+  .background2::before{
+    height: 1500px;
+    width: 1100px;
+  }
+
+  .background3::before{
+    height: 2300px;
+    width: 1100px;
+  }
+
+  .background4::before{
+    height: 3000px;
+    width: 1100px;
+  }
+
+  #videos video{
+    width:1100px;
+  }
+
+}
